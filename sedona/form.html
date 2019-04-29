@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Форма отзыва - Sedona</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/ico.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#81b3d2">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <section class="headerTop">
+        <img src="img/svg/logo-mobile.svg" alt="Логотип Седоны" width="140" class="mobileLogo">
+        <div class="hamburgerMenu">
+            <span class="hamburgerItem hamburgerItem-top"></span>
+            <span class="hamburgerItem hamburgerItem-center"></span>
+            <span class="hamburgerItem hamburgerItem-bottom"></span>
+        </div>
+
+        <nav class="mainNav hidden">
+            <a href="index.html" class="mainNav_link">Главная</a>
+            <a href="photo.html" class="mainNav_link">Фото и видео</a>
+            <img src="img/svg/logo.svg" alt="Логотип Седоны" class="logo" width="188">
+            <a class="mainNav_link">Форма отзыва</a>
+            <a href="https://htmlacademy.ru/" class="mainNav_link" target="_blank">HTML Academy</a>
+        </nav>
+    </section>
+    <section class="headerBottom headerBottom-photo">
+        <img src="img/svg/title2.svg" alt="Добро пожаловать в Седона" width="460" class="headerBottom_title">
+        <img src="img/svg/decor.svg" alt="Декор" class="triangle">
+    </section>
+</header>
+<main class="main-form">
+    <div class="formTitle_wrapper">
+        <h1 class="main-form_title">Оставьте свой отзыв</h1>
+        <span class="main-form_span">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </span>
+    </div>
+    <form action="someAction" class="form">
+        <section class="firstInfo">
+            <div class="impressions">
+                <h2 class="impressions_title">Ваше Общее впечатление:</h2>
+                <label class="impressions_label">
+                    <input name="impressions" type="radio" class="impressions_input">
+                    <span class="impressions_span">Скорее положительное</span>
+                </label>
+                <label class="impressions_label">
+                    <input name="impressions" type="radio" class="impressions_input">
+                    <span class="impressions_span">Скорее отрицательное</span>
+                </label>
+                <label class="impressions_label">
+                    <input name="impressions" type="radio" class="impressions_input">
+                    <span class="impressions_span">Затрудняюсь ответить</span>
+                </label>
+            </div>
+            <div class="userInfo">
+                <h2 class="userInfo_title">Представьтесь:</h2>
+                <label class="userInfo_label">
+                    <span class="userInfo_span">Имя*:</span>
+                    <input type="text" class="userInfo_input require" placeholder="Петр">
+                </label>
+                <label class="userInfo_label">
+                    <span class="userInfo_span">Фамилия*:</span>
+                    <input type="text" class="userInfo_input require" placeholder="Иванов">
+                </label>
+                <label class="userInfo_label">
+                    <span class="userInfo_span">Отчество:</span>
+                    <input type="text" class="userInfo_input" placeholder="Александрович">
+                </label>
+            </div>
+        </section>
+        <section class="contacts">
+            <span class="text">Контактная информация:</span>
+            <label class="contacts_label">
+                <span class="contacts_span">Телефон*:</span>
+                <input type="tel" class="contacts_input require" placeholder="Введите телефон">
+            </label>
+            <label class="contacts_label">
+                <span class="contacts_span">Электронная почта*:</span>
+                <input type="email" class="contacts_input require email" placeholder="Введите e-mail">
+            </label>
+        </section>
+        <section class="textarea">
+            <span class="text">Опишите свои эмоции</span>
+            <textarea class="textarea__input" rows="8"
+                      placeholder="Опишите подробно все свои восторги"
+                      maxlength="1000"></textarea>
+        </section>
+        <div class="formSend">
+            <button class="formSend__button">Отправить форму</button>
+            <span class="formSend__span formSend__span-long">* — обязательные для заполнения поля</span>
+            <span class="formSend__span formSend__span-short">* — обязательные поля</span>
+        </div>
+    </form>
+    <section class="popupSuccess__wrapper hide">
+        <div class="popupSuccess">
+            <div class="popupSuccess-top">
+                <h2 class="popupSuccess__title">Ваш отзыв отправлен!</h2>
+                <span class="popupSuccess__span">
+                    Спасибо за ваше участие, ваша заявка уже поступила к нам.
+                    В ближайшее время мы рассмотрим ее и оповестим вас.
+                </span>
+            </div>
+            <div class="popupSuccess-bottom">
+                <button class="popupSuccess__button">Закрыть окно</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer_wrapper">
+        <span class="visit">#visitsedona</span>
+        <div class="socialMedia">
+            <a href="https://twitter.com/" target="_blank"><img src="img/svg/twitter.svg" alt="Твиттер" class="socialMedia_img" width="18"></a>
+            <a href="https://facebook.com/" target="_blank"><img src="img/svg/fb.svg" alt="Фейсбук" class="socialMedia_img" width="9"></a>
+            <a href="https://youtube.com/" target="_blank"><img src="img/svg/youtube.svg" alt="Ютуб" class="socialMedia_img" width="20"></a>
+        </div>
+        <div class="developer">
+            <span class="developer_span">Разработано</span>
+            <img src="img/svg/academy.svg" alt="HTML Academy" width="27" class="developer_img">
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
