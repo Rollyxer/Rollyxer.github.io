@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+    <title>Список задач</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="#">
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#">
+    <meta name="msapplication-navbutton-color" content="#">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<main class="tasksWrap">
+    <div class="container">
+
+        <div class="card mb-3">
+            <div class="card-header text-center">Добавить задачу</div>
+            <div class="card-body">
+                <form name="addTask">
+
+                    <div class="form-group">
+                        <label>
+                            <input type="text" class="form-control form__input" id="addText">
+                            <span class="invalid-feedback">Введите текст</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Добавить</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="card mb3">
+
+            <div class="card-header tasksTitle text-center">Задачи</div>
+            <div class="card-body">
+                <ul class="list-group"></ul>
+                <button class="btn btn-primary clearButton mt-3">Очистить список</button>
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+<script src="https://kit.fontawesome.com/e09754950b.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
